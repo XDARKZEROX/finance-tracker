@@ -1,6 +1,6 @@
 # Finance Tracking Proyect en Rails 5.1
 
-[link del proyecto]
+[Link Del Proyecto]
 En construcción
 
 # Instalacion de gemas para Devise y estilo

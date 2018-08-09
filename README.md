@@ -1,5 +1,6 @@
 # Finance Tracking Proyect en Rails 5.1
 
+[link del proyecto]
 En construcción
 
 # Instalacion de gemas para Devise y estilo
@@ -48,3 +49,6 @@ Luego ejecutar el siguiente comando:
 rails g devise:views:locale en
 rails g devise:views:bootstrap_templates
 ```
+
+[//]: 
+    [Link del proyecto]: <http://google.com>

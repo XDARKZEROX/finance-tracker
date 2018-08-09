@@ -1,24 +1,50 @@
-# README
+# Finance Tracking Proyect en Rails 5.1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+En construcción
 
-Things you may want to cover:
+# Instalacion de gemas para Devise y estilo
 
-* Ruby version
+Agregar las siguientes dependencias al archivo Gemfile
 
-* System dependencies
+  - gem 'devise'
+  - gem 'devise-bootstrap-views'
+  - gem 'jquery-rails'
+  - gem 'twitter-bootstrap-rails'
 
-* Configuration
+Ejecutar
 
-* Database creation
+```sh
+$ bundle install --without production
+$ rails generate devise:install
+$ rails generate devise User
+$ rake db:migrate to add users table
+```
 
-* Database initialization
+Para el uso de jquery y los estilos de bootstrap ejecutar:
 
-* How to run the test suite
+```sh
+$ rails generate bootstrap:install static
+$ rails g bootstrap:layout application
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+En app/assets/stylesheets agregarlas siguientes lineas
 
-* Deployment instructions
+```sh
+ *= require devise_bootstrap_views
+ *= require_tree .
+ ```
 
-* ...
+Para el funcionamiento de jquery correctamente ir a app/assets/javascripts/application.js file 
+y agregar el siguiente codigo:
+
+```sh
+//= require jquery
+//= require twitter/bootstrap
+```
+
+Luego ejecutar el siguiente comando:
+
+```sh
+rails g devise:views:locale en
+rails g devise:views:bootstrap_templates
+```

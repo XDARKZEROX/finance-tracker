@@ -18,7 +18,7 @@ Ejecutar
 $ bundle install --without production
 $ rails generate devise:install
 $ rails generate devise User
-$ rake db:migrate to add users table
+$ rake db:migrate
 ```
 
 Para el uso de jquery y los estilos de bootstrap ejecutar:

@@ -4,4 +4,6 @@ Rails.application.routes.draw do
   root 'welcome#index'
   get 'my_portfolio', to: 'users#my_portfolio'
   get 'search_stocks', to: 'stocks#search'
+  #edit_user_registration
+  #function to edit user already logged in
 end
